@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayla Marie Books</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  
+  <style>
+  @font-face {
+      font-family: "Linot Didot";
+      src: url("linotype_didot.ttf");
+  }
+  @font-face {
+      font-family: "Palatino Linotype";
+      src: url("linotype_palatino.ttf");
+  }
+  
+  body {
+      position: relative;
+  }
+  #section1 {
+    padding-top:80px;
+	padding-left:0px;
+	padding-right:0px;
+    height:20%;
+	color: #fff;
+	background-color: #eeeeee;	
+  }
+  #section2 {padding-top:100px;height:20%;color: #fff; background-color: #ffffff;}
+  #section3 {padding-top:100px;height:20%;color: #fff; background-color: #8892a1;}
+  #section4 {padding-top:60px;height:20%;color: #fff; background-color: white;}
+  #section5 {padding-top:60px;height:20%;color: #fff; background-color: white;} 
+  .navbar-custom {
+    color: #8892a1;
+    background-color: #FFFFFF;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+    -moz-box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+    box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+  }
+  .navbar .nav > li > a {
+    color:  #8892a1;
+	margin-top: 10px;
+  }
+  .navbar .nav.pull-right {
+    float: right;
+    margin-right: 98px; /*set margin this way in your custom styesheet*/
+  }
+  .icon-bar {
+    margin-top: 10px;
+    background-color:#8892a1 !important;
+  }
+  
+  @media (max-width: 900px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+  }
+  
+  #bg {
+    /*position: fixed; */
+    top: 0; 
+    left: 0; 
+	
+    /* Preserve aspet ratio */
+    min-width: 1000px;
+    min-height: 700px;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 10%;
+    left: 0;
+	width: 100%;
+	min-width: 0px;
+	color: #0f3a69;
+	text-align: center;
+  }
+  
+  .captionbg {
+    color: black;
+	font-family: 'Palatino Linotype', serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;	
+  }
+  body {text-shadow:1px 1px 1px rgba(0,0,0,0.004) !important;}
+  .row { margin: 0; padding: 0 }
+  .btn-xlarge {
+    padding: 10px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+   }
+   .btn-xlarge-trial {
+    padding: 10px 28px;
+    font-size: 20px;
+	background-color: white;
+	color: #931111;
+	border: 2px solid #bac5cd;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+   }
+   
+   .clearpad {
+      margin-left: 0px;
+	  padding-left: 0px;
+	  margin-right: 0px;
+	  padding-right: 0px;
+	  margin-bottom: 0px;
+	  padding-bottom: 0px;
+	  margin-top: 0px;
+	  padding-top: 0px;
+   }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-fixed-top navbar-custom">
+  <div class="container-fluid">    
+    <div class="navbar-header">	    
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+	  <img src="navlogo.png"/>
+    </div>	
+    <div>	  
+      <div class="collapse navbar-collapse" id="myNavbar">	    
+        <ul class="nav pull-right navbar-nav">
+          <li><a href="#section1">Home</a></li>
+          <li><a href="#section2">Books</a></li>
+          <li><a href="#section3">Writing Diary</a></li>
+		  <li><a href="downloads.html">Downloads</a></li>
+		  <li><a href="#section4">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div id="section1" class="container-fluid">
+   <div class="row">
+     <div class="col-xs-12 hidden-xs clearpad">
+       <img src="163184895_5.png" id="bg" class="center-block img-responsive">
+       <div class="caption" style="font-family: Linot Didot, serif;">
+         <h1 style="font-size: 10vw;"><b><i>Kayla Marie</i></b></h1>
+	     </br>
+	     <h1 style="font-size:3vw;"><span class="captionbg">The Official Website of the Author of the</span></h1>
+	     <h1 style="font-size:3vw;"><span class="captionbg">beautiful love story:</span></h1>
+	     <br/>
+	     <h1 style="font-size:7vw;"><span class="captionbg" style="color: #0f3a69;"><b>Mended</b></span></h1>
+       </div>
+	 </div>
+	 <div class="col-xs-12 visible-xs clearpad">
+       <img src="163184895_5.png" id="bg" class="center-block img-responsive" style="min-height: 500px">
+       <div class="caption" style="font-family: Linot Didot, serif;">
+         <h1 style="font-size: 5em;"><b><i>Kayla Marie</i></b></h1>
+	     </br>
+	     <h1 style="font-size:1.875em;"><span class="captionbg">The Official Website of the Author of the</span></h1>
+	     <h1 style="font-size:1.875em;"><span class="captionbg">beautiful love story:</span></h1>
+	     <br/>
+	     <h1 style="font-size:3.75em;"><span class="captionbg" style="color: #0f3a69;"><b>Mended</b></span></h1>
+       </div>
+	 </div>
+   </div>
+   <div class="row" style="background-color: #ecf0f1; padding-top: 60px;">
+    <div class="col-xs-12 visible-xs visible-sm"> 
+	  <div style="padding-bottom: 60px;">
+        <div><img src="bookmedium.png" style="margin: auto; display: block; padding-bottom: 20px"/></div>
+	    <div><button type="button" class="btn btn-xlarge btn-primary" style="margin: auto; display: block;" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Get it Now</button></div>
+	  </div>
+    </div>	
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+	<div class="col-xs-5 hidden-xs hidden-sm">
+	  <div style="float: right; padding-right: 8%; padding-bottom: 60px">
+        <div><img src="bookmedium.png" style="margin: auto; display: block; padding-bottom: 20px;"/></div>
+	    <div><button type="button" class="btn btn-xlarge btn-primary" style="margin: auto; display: block;" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Get it Now</button></div>
+	  </div>
+    </div>
+	<div class="col-xs-5 hidden-xs hidden-sm">
+	  <div style="padding-top: 5%; max-width: 400px">
+	    <div style="color: black; font-size: 1.7em; padding-left: 8%;">
+	      <i>“Mended is a profoundly moving story of loss, love, and hope. Kayla Marie has a rare talent: she has given us a beautifully crafted story rich with believable and authentic characters, intrigue, and raw emotion.”</i>
+          <br/><br/>         
+	    </div>
+	    <div style="color: black; text-align: right; font-size: 1.7em; padding-right: 25px">
+	      -Nicole, NJ
+	    </div>
+	  </div>
+	</div>
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+  </div>
+  <div class="row" style="background-color: #ecf0f1;">
+    <div class="col-xs-1">
+	</div>
+    <div class="col-xs-10">
+    <div style="color: black; margin: auto; display: block; font-size:2em; text-align: justify; text-justify: inter-word; max-width: 1000px">
+	  <div style="text-align: center"><b>Welcome and thank you for taking the time to visit my webpage!</b></div><br> 
+      Here you will find everything you need to know about me and my work as a writer of contemporary romance. My first finished novel is a beautiful love story called <a href="https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/">Mended</a>; a heartfelt story about tragedy and the incredible ability of love to mend even the deepest of wounds. I hope you will enjoy reading it as much as I enjoyed writing it.<br><br> 
+	  
+      <div class="clearpad hidden-xs">You can find out more information about <a href="https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/">Mended</a> and download it on my <a href="#section2">books</a> page. I hope that you will take the time to explore my website and get to know me and my work.<br><br> 
+      Check out my <a href="#section3">Writing Diary</a> for sample chapters, excerpts, bonus material, and more!<br><br> 
+      I'd love to hear from you, so please check out my <a href="#section4">contact</a> page for ways to reach me. Your comments, opinions, and feedback are always appreciated! Check back often for updates and information about my upcoming works.<br><br></div>
+      <div style="text-align: center"><b>Thank you for visiting!</b></div><br>
+	</div>
+	</div>
+	<div class="col-xs-1">
+	</div>
+  </div>
+</div>
+
+<div id="section2" class="container-fluid">
+  <div class="row">
+     <div style="color: black; text-align: center; font-size: 3.5em; line-height: 1em"><b>Books by Kayla Marie</b></div>
+     <div style="margin-top: 0px; padding-bottom: 60px"><hr style="padding-top: 0px; width: 60%; max-width: 750px; color: black; height: 1px; background-color:black;" /></div>
+  </div>
+  <div class="row">
+    <div class="col-xs-2 hidden-xs hidden-sm">
+	</div>
+	<div class="col-xs-12 visible-sm" style="padding-bottom: 60px">
+      <div style="margin: 0 auto; width: 50%; text-align: center; color: black;">	
+        <span style="color: #1c3766; font-size:2.5em;"><b><i>MENDED</i></b></span><br>
+	    <span style="color: #777777; font-size:1.3em;">Sweet Home Dixie Book one</span><br>
+		<span style="font-size:1em;"><br><b>She aches for what she lost.</b><br>        
+        <b>He is haunted by failure.</b><br>        
+        <b>One great love can transform their lives.</b><br><br>
+        <b>Witty and heartfelt with just enough suspense and sizzle, Mended is a story of hope amongst tragedy and the amazing ability of love to heal the deepest of wounds.</b></span>
+	  </div>
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm" style="min-width: 350px">
+	  <div><img src="booklarge.png" style="margin: auto; display: block; padding-bottom: 20px;"/></div>
+	  <div style="padding-bottom: 20px"><button type="button" class="btn btn-xlarge-trial btn-primary visible-md" style="margin: auto; display: block;" onclick="window.location='./sneakpeek.pdf'">FREE Sneak Peak</button></div>
+	  <div><button type="button" class="btn btn-xlarge btn-primary" style="margin: auto; display: block;" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Get on Amazon</button></div>
+	</div>
+	<div class="col-xs-12 visible-xs visible-sm" style="padding-bottom: 60px">
+	  <div><img src="booklarge.png" style="margin: auto; display: block; padding-bottom: 20px;"/></div>
+	  <div style="padding-bottom: 20px"><button type="button" class="btn btn-xlarge-trial btn-primary" style="margin: auto; display: block;" onclick="window.location='./sneakpeek.pdf'">FREE Sneak Peak</button></div>
+	  <div><button type="button" class="btn btn-xlarge btn-primary" style="margin: auto; display: block;" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Get on Amazon</button></div>
+	</div>
+	<div class="col-xs-5 hidden-xs hidden-sm">
+	  <div class="row">
+	    <div class="col-xs-6 clearpad">
+		   <span style="color: #1c3766; font-size:2.5em;"><b><i>MENDED</i></b></span><br>
+		   <span style="color: #777777; font-size:1.3em;">Sweet Home Dixie Book one</span>
+	    </div>
+		<div class="col-xs-6 clearpad hidden-md">
+		  <div style="float: left; margin-top: 20px"><button type="button" class="btn btn-xlarge-trial btn-primary" style="margin: auto; display: block;" onclick="window.location='./sneakpeek.pdf'">Download a FREE Sneak Peak</button></div>
+	    </div>
+	  </div>
+	  <div style="color: black; font-size:1.3em;">
+	    <br><b>She aches for what she lost.</b><br>
+        Four years after her husband’s tragic and traumatic end, Ashley remains heartbroken and yearning for the man who left her behind. Desperate for healing and to break her teenage son’s newfound cycle of crime, she leaves the city for a small, sleepy town in southern Alabama hoping for a fresh start. There, she finds Wade, the charming, ever-genuine contractor who’s more than she bargained for.<br><br> 
+        <b>He is haunted by failure.</b><br>
+        Plagued by guilt when his younger brother goes to prison, Wade is consumed by his brother’s bleak future and his own personal demons. There’s no room for love and happiness in his world. That is, until the beautiful widow with sad eyes and a troubled teenage son moves to town.<br><br> 
+        If only her heart didn’t belong to her past.<br>
+        If only his past didn’t torment him.<br><br> 
+        <b>One great love can transform their lives.</b><br>
+        They need only to open their hearts.<br><br> 
+        <b>Witty and heartfelt with just enough suspense and sizzle, Mended is a story of hope amongst tragedy and the amazing ability of love to heal the deepest of wounds.</b><br><br><br><br><br>
+	  </div>
+	</div>	
+	<div class="col-xs-2 hidden-xs hidden-sm">
+	</div>    
+  </div>
+  
+  <!-- What Readers are saying about Mended -->
+  <div class="row">
+     <div style="color: #0e1b33; text-align: center; font-size: 2em; line-height: 1em"><b>What Readers Are Saying About Mended</b></div>
+     <div style="margin-top: 0px; padding-bottom: 20px"><hr style="padding-top: 0px; width: 60%; max-width: 500px; color: black; height: 1px; background-color: #0e1b33;" /></div>
+  </div>
+  
+  <!-- Quotes about Mended -->
+  <div class="row">
+	<div style="margin: auto; width: 50%; min-width: 500px; overflow: visible; padding-bottom: 40px">
+	<div class="clearpad" style="color: #3e434a; text-align: justify; text-justify: inter-word; padding-right: 90px">
+	  <div style="float: left; padding-right: 10px"><img src="quotes.png"/></div>
+	  <div style="padding-top: 23px; padding-bottom: 20px; margin-left: 90px"><i>Mended is a profoundly moving story of loss, love, and hope. Kayla Marie has a rare talent: she has given us a beautifully crafted story rich with believable and authentic characters, intrigue, and raw emotion.</i></div>
+	  <div style="text-align: right; color: #8892a1;  font-size: 1.2em;">Nicole</div>
+	  <div style="text-align: right; color: #8892a1;"><i>New Jersey</i></div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="row">
+	<div style="margin: auto; width: 50%; min-width: 500px; overflow: visible; padding-bottom: 40px">
+	<div class="clearpad" style="color: #3e434a; text-align: justify; text-justify: inter-word; padding-right: 90px">
+	  <div style="float: left; padding-right: 10px"><img src="quotes.png"/></div>
+	  <div style="padding-top: 23px; padding-bottom: 20px; margin-left: 90px"><i>Mended is a touching romance novel that I really got into, the book is very well written and the ending is so emotional! I'm recommending it to all my family and friends.</i></div>
+	  <div style="text-align: right; color: #8892a1;  font-size: 1.2em;">Justin</div>
+	  <div style="text-align: right; color: #8892a1;"><i>California</i></div>
+    </div>
+    </div>
+  </div>
+  
+  <div class="row">
+	<div style="margin: auto; width: 50%; min-width: 500px; overflow: visible; padding-bottom: 40px">
+	<div class="clearpad" style="color: #3e434a; text-align: justify; text-justify: inter-word; padding-right: 90px">
+	  <div style="float: left; padding-right: 10px"><img src="quotes.png"/></div>
+	  <div style="padding-top: 23px; padding-bottom: 20px; margin-left: 90px"><i>Mended is a captivating story about a single mom who goes to great lengths to save her son from a devastating future. What she encounters during the process is heartwarming. It's real page turner. I can't wait to read the next book in the series.</i></div>
+	  <div style="text-align: right; color: #8892a1;  font-size: 1.2em;">Karie</div>
+	  <div style="text-align: right; color: #8892a1;"><i>California</i></div>
+    </div>
+    </div>
+  </div>
+</div>
+
+<div id="section3" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12">
+      <div style="color: white; text-align: center; font-size: 3.5em; line-height: 1em"><b>Writing Diary</b></div>
+      <div style="padding-bottom: 60px;">
+	    <hr style="padding-top: 0px; width: 60%; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0;" />
+      </div>
+	</div>
+  </div>
+  
+  <!-- Writing Blog sm xs-->
+  <div class="row">
+    <div class="col-xs-2 visible-xs visible-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">17</div>
+	</div>
+	<div class="col-xs-8 visible-xs visible-sm">
+	  <div style="padding-top: 7px; padding-left: 10px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/final-changes-and-new-excerpt.html" style="color: white"><b>Final changes to Mended, and a new excerpt!</b><br><br>He felt like he’d swallowed a boulder. Its heavy weight pulled deep in the pit of his stomach and anger swirled inside him...</a>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="row visible-xs visible-sm">
+    <div style="padding-top: 60px"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-2 visible-xs visible-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">09</div>
+	</div>
+	<div class="col-xs-8 visible-xs visible-sm">
+	  <div style="padding-top: 7px; padding-left: 10px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/updates-and-new-excerpt-from-mended.html" style="color: white"><b>Updates and a New Excerpt from Mended</b><br><br>He was finding it hard to control himself whenever he was around her. Last night he ached to tuck the loose strand of hair behind her ear and lean in to kiss her perfect full lips...</a>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="row visible-xs visible-sm">
+    <div style="padding-top: 60px"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-2 visible-xs visible-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">07</div>
+	</div>
+	<div class="col-xs-8 visible-xs visible-sm">
+	  <div style="padding-top: 7px; padding-left: 10px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/excerpt-3.html" style="color: white"><b>Excerpt #3</b><br><br>She was aware of how close he stood to her in her small kitchen, and she was tempted to reach out and touch him. Her heart skipped a beat whenever his arm lightly brushed hers...</a>
+	  </div>
+	</div>
+  </div>
+  
+  <div class="row visible-xs visible-sm">
+    <div style="padding-top: 60px"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-2 visible-xs visible-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">06</div>
+	</div>
+	<div class="col-xs-8 visible-xs visible-sm">
+	  <div style="padding-top: 7px; padding-left: 10px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/an-excerpt-from-mended-meet-cute.html" style="color: white"><b>An Excerpt from Mended</b><br><br>The stranger with the striking, coffee eyes and the dark brown hair looked down at her apologetically. He was tall...</a>
+	  </div>
+	</div>
+  </div>
+  
+  <!-- Writing Blog medium large-->
+  <div class="row">
+    <div class="col-xs-2 hidden-xs hidden-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">17</div>
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm">
+	  <div style="padding-top: 7px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/final-changes-and-new-excerpt.html" style="color: white"><b>Final changes to Mended, and a new excerpt!</b><br><br>He felt like he’d swallowed a boulder. Its heavy weight pulled deep in the pit of his stomach and anger swirled inside him...</a>
+	  </div>
+	</div>
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+	<div class="col-xs-2 hidden-xs hidden-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">09</div>
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm">
+	  <div style="padding-top: 7px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/updates-and-new-excerpt-from-mended.html" style="color: white"><b>Updates and a New Excerpt from Mended</b><br><br>He was finding it hard to control himself whenever he was around her. Last night he ached to tuck the loose strand of hair behind her ear and lean in to kiss her perfect full lips...</a>
+	  </div>
+	</div>
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+  </div>
+  
+  <div class="row">
+    <div style="padding-top: 60px"></div>
+  </div>
+  
+  <div class="row">
+    <div class="col-xs-2 hidden-xs hidden-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">07</div>
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm">
+	  <div style="padding-top: 7px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/excerpt-3.html" style="color: white"><b>Excerpt #3</b><br><br>She was aware of how close he stood to her in her small kitchen, and she was tempted to reach out and touch him. Her heart skipped a beat whenever his arm lightly brushed hers...</a>
+	  </div>
+	</div>
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+	<div class="col-xs-2 hidden-xs hidden-sm">
+	  <div style="text-align: right; font-size: 2.5em; color: #387fbb; padding-bottom: 7px;">Nov.</div>
+	  <div><hr style="padding-top: 0px; width: 70px; max-width: 750px; color: #387fbb; height: 1px; background-color: #387fbb; border-width:0; margin-top: 0px; margin-bottom: 0px; magin-left: 0px; margin-right: 0px" /></div>
+	  <div style="text-align: right; font-size: 4.5em; color: #387fbb;">06</div>
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm">
+	  <div style="padding-top: 7px; font-size: 1.4em">
+      <a href="http://loveandwriting.blogspot.com/2016/11/an-excerpt-from-mended-meet-cute.html" style="color: white"><b>An Excerpt from Mended</b><br><br>The stranger with the striking, coffee eyes and the dark brown hair looked down at her apologetically. He was tall...</a>
+	  </div>
+	</div>
+	<div class="col-xs-1 hidden-xs hidden-sm">
+	</div>
+  </div>
+  <div class="row">
+     <div style="padding-top: 60px"></div>
+  </div>
+</div>
+
+<div id="section4" class="container-fluid">
+  <div class="row">
+    <div class="col-xs-12 clearpad">
+      <div style="color: #0e1b33; text-align: center; font-size: 3.5em; line-height: 1em; padding-bottom: 20px;"><b>Contact Me</b></div>
+      <div style="padding-bottom: 20px;">
+	    <hr style="padding-top: 0px; width: 60%; max-width: 750px; color: #0e1b33; height: 1px; background-color: #0e1b33; border-width:0;" />
+      </div>
+	</div>
+  </div>
+  <div class="row">
+    <div style="margin: auto; color: #777777; text-align: center; font-size: 2em; padding-bottom: 20px;">
+	  I'd love to hear from you!
+	</div>
+  </div>
+  <div class="row">
+    <div style="margin: auto; color: black; text-align: center; padding-top: 20px; padding-bottom: 60px">
+	   <a href="https://www.facebook.com/kaylamariebooks/" style="padding-right: 20px"><i class="fa fa-facebook fa-2x"></i></a>
+	   <a href="https://twitter.com/kaylamariebooks" style="padding-right: 20px"><i class="fa fa-twitter fa-2x"></i></a>
+	   <!--<a href="www.google.com" style="padding-right: 20px"><i class="fa fa-google-plus fa-2x"></i></a>-->
+	   <a href="https://www.linkedin.com/in/kayla-marie-130b3a11b/"><i class="fa fa-linkedin fa-2x"></i></a>
+	</div>
+  </div>
+</div>
+
+<script src="https://use.fontawesome.com/02bb8c11f2.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
