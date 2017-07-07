@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Kayla Marie Books</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <link href="https://cdn-images.mailchimp.com/embedcode/classic-10_7.css" rel="stylesheet" type="text/css">
+  
+  <style>
+  @font-face {
+      font-family: "Linot Didot";
+      src: url("linotype_didot.ttf");
+  }
+  @font-face {
+      font-family: "Palatino Linotype";
+      src: url("linotype_palatino.ttf");
+  }
+  
+  body {
+      position: relative;
+  }
+  #section1 {
+    padding-top:80px;
+	padding-left:0px;
+	padding-right:0px;
+    height:20%;
+	color: #fff;
+	background-color: #eeeeee;	
+  }
+  #section2 {padding-top:100px;height:20%;color: #fff; background-color: #ffffff;}
+  #section3 {padding-top:100px;height:20%;color: #fff; background-color: #8892a1;}
+  #section4 {padding-top:60px;height:20%;color: #fff; background-color: white;}
+  #section5 {padding-top:60px;height:20%;color: #fff; background-color: white;} 
+  .navbar-custom {
+    color: #8892a1;
+    background-color: #FFFFFF;
+	-webkit-box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+    -moz-box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+    box-shadow: 0 8px 6px -6px rgba(112,112,112,1);;
+  }
+  .navbar .nav > li > a {
+    color:  #8892a1;
+	margin-top: 10px;
+  }
+  .navbar .nav.pull-right {
+    float: right;
+    margin-right: 98px; /*set margin this way in your custom styesheet*/
+  }
+  .icon-bar {
+    margin-top: 10px;
+    background-color:#8892a1 !important;
+  }
+  
+  @media (max-width: 900px) {
+    .navbar-header {
+        float: none;
+    }
+    .navbar-left,.navbar-right {
+        float: none !important;
+    }
+    .navbar-toggle {
+        display: block;
+    }
+    .navbar-collapse {
+        border-top: 1px solid transparent;
+        box-shadow: inset 0 1px 0 rgba(255,255,255,0.1);
+    }
+    .navbar-fixed-top {
+        top: 0;
+        border-width: 0 0 1px;
+    }
+    .navbar-collapse.collapse {
+        display: none!important;
+    }
+    .navbar-nav {
+        float: none!important;
+        margin-top: 7.5px;
+    }
+    .navbar-nav>li {
+        float: none;
+    }
+    .navbar-nav>li>a {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+    .collapse.in{
+        display:block !important;
+    }
+   .navbar-nav .open .dropdown-menu {
+       position: static;
+       float: none;
+       width: auto;
+       margin-top: 0;
+       background-color: transparent;
+       border: 0;
+       -webkit-box-shadow: none;
+       box-shadow: none;
+    }
+  }
+  
+  #bg {
+    /*position: fixed; */
+    top: 0; 
+    left: 0; 
+	
+    /* Preserve aspet ratio */
+    min-width: 1000px;
+    min-height: 700px;
+  }
+  
+  .caption {
+    position: absolute;
+    top: 10%;
+    left: 0;
+	width: 100%;
+	min-width: 0px;
+	color: #0f3a69;
+	text-align: center;
+  }
+  
+  .captionbg {
+    color: black;
+	font-family: 'Palatino Linotype', serif;
+	padding-left: 10px;
+	padding-right: 10px;
+	padding-bottom: 10px;
+	vertical-align: middle;	
+  }
+  body {text-shadow:1px 1px 1px rgba(0,0,0,0.004) !important;}
+  .row { margin: 0; padding: 0 }
+  .btn-xlarge {
+    padding: 10px 28px;
+    font-size: 22px;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+   }
+   .btn-xlarge-trial {
+    padding: 10px 28px;
+    font-size: 20px;
+	background-color: white;
+	color: #931111;
+	border: 2px solid #bac5cd;
+    line-height: normal;
+    -webkit-border-radius: 8px;
+       -moz-border-radius: 8px;
+            border-radius: 8px;
+   }
+   
+   .clearpad {
+      margin-left: 0px;
+	  padding-left: 0px;
+	  margin-right: 0px;
+	  padding-right: 0px;
+	  margin-bottom: 0px;
+	  padding-bottom: 0px;
+	  margin-top: 0px;
+	  padding-top: 0px;
+   }
+  </style>
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="50">
+<nav class="navbar navbar-fixed-top navbar-custom">
+  <div class="container-fluid">    
+    <div class="navbar-header">	    
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+      </button>
+	  <img src="navlogo.png"/>
+    </div>	
+    <div>	  
+      <div class="collapse navbar-collapse" id="myNavbar">	    
+        <ul class="nav pull-right navbar-nav">
+		  <li><a href="index.html#section1">Home</a></li>
+          <li><a href="index.html#section1a">Books</a></li>
+          <li><a href="index.html#section2">Writing Diary</a></li>
+		  <li><a href="index.html#section3">About Me</a></li>
+		  <li><a href="downloads.html">Downloads</a></li>
+		  <li><a href="index.html#section4">Contact</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<div class="container-fluid">
+
+  <div class="row" style="padding-top: 120px;"/>    
+    <!--<div class="col-xs-12 visible-xs visible-sm" >  
+	</div>
+	<div class="col-xs-12 visible-xs visible-sm">  
+       <div style="text-align: center; font-size: 2em; color: #0f4680; padding-bottom: 60px">Subscribe to Kayla Marie's free newsletter and receive the first 21 chapters of Mended for FREE!</div>	
+	</div>
+  </div>-->
+  
+  <div class="row">
+    <div class="col-xs-12 visible-xs visible-sm"> 
+	  <div style="padding-bottom: 40px;">
+	    <div style="text-align: center; font-size: 1.3em; color: #484d56; padding-bottom: 10px">Sweet Home Dixie Book 1</div>
+        <div><img src="booklarge.png" style="margin: auto; display: block; padding-bottom: 20px"/></div>
+        <div style="text-align: center;"><img src="stars.jpg"/></div>
+		<div style="text-align: center; padding-top: 20px"><button type="button" class="btn btn-xlarge btn-primary" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Buy on Amazon</button></div>
+	  </div>
+    </div>	
+	<div class="col-xs-2 hidden-xs hidden-sm">
+	</div>
+	<div class="col-xs-3 hidden-xs hidden-sm" style="min-width: 315px">
+	    <div style="text-align: center; font-size: 1.3em; color: #484d56; padding-bottom: 10px">Sweet Home Dixie Book 1</div>	    
+        <div><img src="booklarge.png" style="margin: auto; display: block; padding-bottom: 20px;"/></div>
+        <div style="text-align:center;"><button type="button" class="btn btn-xlarge btn-primary" onclick="window.location='https://www.amazon.com/Mended-Sweet-Home-Dixie-Novel/dp/069280367X/'">Buy on Amazon</button></div>
+    </div>
+	<div class="col-xs-5 hidden-xs hidden-sm">
+	  <div>
+	    <div style="text-align: center; font-size: 2vw; color: #931111">
+	      <i>She aches for what she lost</i>
+	    </div>
+		<div style="text-align: center; font-size: 1.2vw; color: #484d56">
+	      Four years after her husband’s tragic and traumatic end, Ashley remains heartbroken and yearning for the man who left her behind. Desperate for healing and to break her teenage son’s newfound cycle of crime, she leaves the city for a small, sleepy town in southern Alabama hoping for a fresh start. There, she finds Wade, the charming, ever-genuine contractor who’s more than she bargained for.<br><br>
+	    </div>
+		<div style="text-align: center; font-size: 2vw; color: #931111">
+	      <i>He is haunted by failure</i>
+	    </div>
+		<div style="text-align: center; font-size: 1.2vw; color: #484d56">
+	      Plagued by guilt when his younger brother goes to prison, Wade is consumed by his brother’s bleak future and his own personal demons. There’s no room for love and happiness in his world. That is, until the beautiful widow with sad eyes and a troubled teenage son moves to town.<br><br>
+	    </div>
+		<div style="text-align: center; font-size: 1.2vw; color: #484d56">
+	      If only her heart didn't belong to her past.<br>If only his past didn't torment him.<br><br>
+	    </div>
+		<div style="text-align: center; font-size: 2vw; color: #931111">
+	      <i>One great love can transform their lives.</i><br>
+		  <i>They need only to open their hearts.</i><br><br>
+	    </div>
+		<div style="text-align: center; font-size: 1.2vw; color: #484d56">
+	      Witty and heartfelt with just enough suspense and sizzle,<br><i>Mended</i> is a story of hope amoungst tragedy and love's amazing ability to heal the deepest wounds.<br><br>
+	    </div>		
+		<div style="text-align: center; padding-top: 10px; padding-bottom: 40px"><img src="award.png" width="200px" height="200px"/></div>
+	  </div>
+	</div>	
+	<div class="col-xs-2 hidden-xs hidden-sm">
+	</div>
+  </div>    
+</div>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+
+</body>
+</html>
